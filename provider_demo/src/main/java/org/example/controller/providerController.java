@@ -25,6 +25,7 @@ public class providerController {
         return new Result<>("200", new Person(name, age));
     }
     public void commitMaster(){}
+    public void commitMaster1(){}
     public void commitDev(){}
 
     public static void main(String[] args) {
