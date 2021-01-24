@@ -22,14 +22,4 @@ public class providerController {
         return new Result<>("200", new Person(name, age));
     }
 
-    public static void main(String[] args) {
-        ArrayList<Object> list = new ArrayList<>();
-        list.add("aaaa");
-        list.add("bbbb");
-        list.add("cccc");
-        list.add("dddd");
-        list.stream().filter(Objects::nonNull).collect(Collectors.toList());
-        list.stream().peek(str -> System.out.println(str + "_test")).map(str -> str + "_test").forEach(str -> System.out.println(str));
-
-    }
 }
