@@ -24,6 +24,7 @@ public class providerController {
         System.out.println("github1");
         return new Result<>("200", new Person(name, age));
     }
+    public void commitMaster(){}
     public void commitDev(){}
 
     public static void main(String[] args) {
