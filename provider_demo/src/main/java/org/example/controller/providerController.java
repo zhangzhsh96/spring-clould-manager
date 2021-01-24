@@ -15,6 +15,11 @@ public class providerController {
     @PostMapping("/id/{name}")
     public Result<Person> add(@PathVariable String name,@RequestParam int age,@RequestParam("adds") String add) {
         System.out.println("name:"+name+",age:"+age+"git ,adds:"+add);
+        return new Result<>("200", new Person(name, age));
+    }
+    public Result<Person> add1(@PathVariable String name,@RequestParam int age,@RequestParam("adds") String add) {
+        System.out.println("name:"+name+",age:"+age+",adds:"+add);
+        System.out.println("name:"+name+",age:"+age+"git ,adds:"+add);
         System.out.println("github");
         System.out.println("github1");
         return new Result<>("200", new Person(name, age));
