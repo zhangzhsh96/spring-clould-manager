@@ -25,5 +25,9 @@ public class providerController {
         return new Result<>("200", new Person(name, age));
     }
 
+    public static void main(String[] args) {
+        System.out.println("aaaa");
+    }
+
 
 }
