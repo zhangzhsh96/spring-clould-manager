@@ -4,10 +4,6 @@ import org.example.entities.Person;
 import org.example.entities.Result;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.stream.Collectors;
-
 @RestController
 public class providerController {
     @GetMapping("/result/{name}/{age}")
